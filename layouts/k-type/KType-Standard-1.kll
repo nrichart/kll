@@ -1,0 +1,31 @@
+Variant = "standard";
+Generator = "NONE";
+Base = "Base";
+Date = "2017-10-13";
+KLL = "0.5c";
+Author = "jbondeson (Jeremy Bondeson) 2017";
+Version = "0.2";
+Name = "KType";
+Layout = "Standard";
+
+U"ESC" : flashMode()(1000ms);
+U"F5" : ledControl( 4, 255 );
+U"F6" : ledControl( 3, 0 );
+U"PAUSE" : CONS"PAUSE";
+U"1" : animation_control( 4 );
+U"3" : animation_control( 0 );
+U"4" : animation_control( 3 );
+U"MINUS" : ledControl( 0, 15 );
+U"EQUALS" : ledControl( 1, 15 );
+U"INSERT" : CONS"MUTE";
+U"HOME" : CONS"VOLUMEDOWN";
+U"PAGEUP" : CONS"VOLUMEUP";
+U"DELETE" : CONS"PAUSEPLAY";
+U"END" : CONS"SCANPREVIOUSTRACK";
+U"PAGEDOWN" : CONS"SCANNEXTTRACK";
+U"RSHIFT" : U"LOCK2";
+U"RCTRL" : U"FUNCTION2";
+
+#U"ESC" :+ A[fade_in](start);
+U"2" : A[single_color](start);
+U"M" : U"MENU" + U"M" + U"U";

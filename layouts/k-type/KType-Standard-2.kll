@@ -1,0 +1,20 @@
+Variant = "standard";
+Generator = "NONE";
+Base = "Base";
+Date = "2017-10-13";
+KLL = "0.5c";
+Author = "jbondeson (Jeremy Bondeson) 2017";
+Version = "0.2";
+Name = "KType";
+Layout = "Standard";
+
+U"DELETE" : mouseOut( 1, 0, 0 );
+U"END" : mouseOut( 3, 0, 0 );
+U"PAGEDOWN" : mouseOut( 2, 0, 0 );
+U"UP" : mouseOut( 0, 0, 1 );
+U"LEFT" : mouseOut( 0, -1, 0 );
+U"DOWN" : mouseOut( 0, 0, -1 );
+U"RIGHT" : mouseOut( 0, 1, 0 );
+
+
+
